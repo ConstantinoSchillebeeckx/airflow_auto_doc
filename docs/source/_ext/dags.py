@@ -45,7 +45,6 @@ from airflow import DAG
 from airflow.models import BaseOperator
 from airflow.utils.dot_renderer import render_dag
 from cron_descriptor import get_description
-#from docutils.parsers.rst import Directive
 from sphinx.ext.autodoc import ClassDocumenter
 from sphinx.ext.autodoc import ModuleDocumenter
 from sphinx.ext.autodoc.importer import get_module_members
