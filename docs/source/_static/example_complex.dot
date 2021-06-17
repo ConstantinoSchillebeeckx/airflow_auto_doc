@@ -1,0 +1,99 @@
+digraph example_complex {
+	graph [labelloc=t rankdir=LR]
+	create_entry_gcs [color="#000000" fillcolor="#f0ede4" label=create_entry_gcs shape=rectangle style="filled,rounded"]
+	create_entry_gcs_result [color="#000000" fillcolor="#f0ede4" label=create_entry_gcs_result shape=rectangle style="filled,rounded"]
+	create_entry_gcs_result2 [color="#000000" fillcolor="#f0ede4" label=create_entry_gcs_result2 shape=rectangle style="filled,rounded"]
+	create_entry_group [color="#000000" fillcolor="#f0ede4" label=create_entry_group shape=rectangle style="filled,rounded"]
+	create_entry_group_result [color="#000000" fillcolor="#f0ede4" label=create_entry_group_result shape=rectangle style="filled,rounded"]
+	create_entry_group_result2 [color="#000000" fillcolor="#f0ede4" label=create_entry_group_result2 shape=rectangle style="filled,rounded"]
+	create_tag [color="#000000" fillcolor="#f0ede4" label=create_tag shape=rectangle style="filled,rounded"]
+	create_tag_result [color="#000000" fillcolor="#f0ede4" label=create_tag_result shape=rectangle style="filled,rounded"]
+	create_tag_result2 [color="#000000" fillcolor="#f0ede4" label=create_tag_result2 shape=rectangle style="filled,rounded"]
+	create_tag_template [color="#000000" fillcolor="#f0ede4" label=create_tag_template shape=rectangle style="filled,rounded"]
+	create_tag_template_field [color="#000000" fillcolor="#f0ede4" label=create_tag_template_field shape=rectangle style="filled,rounded"]
+	create_tag_template_field_result [color="#000000" fillcolor="#f0ede4" label=create_tag_template_field_result shape=rectangle style="filled,rounded"]
+	create_tag_template_field_result2 [color="#000000" fillcolor="#f0ede4" label=create_tag_template_field_result2 shape=rectangle style="filled,rounded"]
+	create_tag_template_result [color="#000000" fillcolor="#f0ede4" label=create_tag_template_result shape=rectangle style="filled,rounded"]
+	create_tag_template_result2 [color="#000000" fillcolor="#f0ede4" label=create_tag_template_result2 shape=rectangle style="filled,rounded"]
+	delete_entry [color="#000000" fillcolor="#f0ede4" label=delete_entry shape=rectangle style="filled,rounded"]
+	delete_entry_group [color="#000000" fillcolor="#f0ede4" label=delete_entry_group shape=rectangle style="filled,rounded"]
+	delete_tag [color="#000000" fillcolor="#f0ede4" label=delete_tag shape=rectangle style="filled,rounded"]
+	delete_tag_template [color="#000000" fillcolor="#f0ede4" label=delete_tag_template shape=rectangle style="filled,rounded"]
+	delete_tag_template_field [color="#000000" fillcolor="#f0ede4" label=delete_tag_template_field shape=rectangle style="filled,rounded"]
+	get_entry [color="#000000" fillcolor="#f0ede4" label=get_entry shape=rectangle style="filled,rounded"]
+	get_entry_group [color="#000000" fillcolor="#f0ede4" label=get_entry_group shape=rectangle style="filled,rounded"]
+	get_entry_group_result [color="#000000" fillcolor="#f0ede4" label=get_entry_group_result shape=rectangle style="filled,rounded"]
+	get_entry_result [color="#000000" fillcolor="#f0ede4" label=get_entry_result shape=rectangle style="filled,rounded"]
+	get_tag_template [color="#000000" fillcolor="#f0ede4" label=get_tag_template shape=rectangle style="filled,rounded"]
+	get_tag_template_result [color="#000000" fillcolor="#f0ede4" label=get_tag_template_result shape=rectangle style="filled,rounded"]
+	list_tags [color="#000000" fillcolor="#f0ede4" label=list_tags shape=rectangle style="filled,rounded"]
+	list_tags_result [color="#000000" fillcolor="#f0ede4" label=list_tags_result shape=rectangle style="filled,rounded"]
+	lookup_entry [color="#000000" fillcolor="#f0ede4" label=lookup_entry shape=rectangle style="filled,rounded"]
+	lookup_entry_result [color="#000000" fillcolor="#f0ede4" label=lookup_entry_result shape=rectangle style="filled,rounded"]
+	rename_tag_template_field [color="#000000" fillcolor="#f0ede4" label=rename_tag_template_field shape=rectangle style="filled,rounded"]
+	search_catalog [color="#000000" fillcolor="#ffefeb" label=search_catalog shape=rectangle style="filled,rounded"]
+	search_catalog_result [color="#000000" fillcolor="#f0ede4" label=search_catalog_result shape=rectangle style="filled,rounded"]
+	update_entry [color="#000000" fillcolor="#f0ede4" label=update_entry shape=rectangle style="filled,rounded"]
+	update_tag [color="#000000" fillcolor="#f0ede4" label=update_tag shape=rectangle style="filled,rounded"]
+	update_tag_template [color="#000000" fillcolor="#f0ede4" label=update_tag_template shape=rectangle style="filled,rounded"]
+	update_tag_template_field [color="#000000" fillcolor="#f0ede4" label=update_tag_template_field shape=rectangle style="filled,rounded"]
+	create_entry_gcs -> create_entry_gcs_result
+	create_entry_gcs -> create_entry_gcs_result2
+	create_entry_gcs -> create_tag_template
+	create_entry_gcs -> delete_entry
+	create_entry_gcs -> get_entry
+	create_entry_gcs -> lookup_entry
+	create_entry_gcs -> search_catalog
+	create_entry_gcs -> update_entry
+	create_entry_group -> create_entry_gcs
+	create_entry_group -> create_entry_group_result
+	create_entry_group -> create_entry_group_result2
+	create_entry_group -> delete_entry_group
+	create_entry_group -> get_entry_group
+	create_entry_group -> search_catalog
+	create_tag -> create_tag_result
+	create_tag -> create_tag_result2
+	create_tag -> delete_tag
+	create_tag -> list_tags
+	create_tag -> search_catalog
+	create_tag -> update_tag
+	create_tag_template -> create_tag_template_field
+	create_tag_template -> create_tag_template_result
+	create_tag_template -> create_tag_template_result2
+	create_tag_template -> delete_tag_template_field
+	create_tag_template -> get_tag_template
+	create_tag_template -> search_catalog
+	create_tag_template -> update_tag_template
+	create_tag_template_field -> create_tag
+	create_tag_template_field -> create_tag_template_field_result
+	create_tag_template_field -> create_tag_template_field_result2
+	create_tag_template_field -> delete_tag_template_field
+	create_tag_template_field -> rename_tag_template_field
+	create_tag_template_field -> search_catalog
+	create_tag_template_field -> update_tag_template_field
+	delete_entry_group -> delete_entry
+	delete_tag -> delete_tag_template_field
+	delete_tag_template -> delete_entry_group
+	delete_tag_template_field -> delete_tag_template
+	get_entry -> delete_entry
+	get_entry -> get_entry_result
+	get_entry_group -> delete_entry_group
+	get_entry_group -> get_entry_group_result
+	get_tag_template -> delete_tag_template
+	get_tag_template -> get_tag_template_result
+	list_tags -> delete_tag
+	list_tags -> list_tags_result
+	lookup_entry -> delete_entry
+	lookup_entry -> lookup_entry_result
+	rename_tag_template_field -> delete_tag_template_field
+	search_catalog -> delete_entry
+	search_catalog -> delete_entry_group
+	search_catalog -> delete_tag
+	search_catalog -> delete_tag_template
+	search_catalog -> delete_tag_template_field
+	search_catalog -> search_catalog_result
+	update_entry -> delete_entry
+	update_tag -> delete_tag
+	update_tag_template -> delete_tag_template
+	update_tag_template_field -> rename_tag_template_field
+}
